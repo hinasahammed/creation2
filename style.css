@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(https://wallpaperaccess.com/full/1126753.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.list{
+    width: 100%;
+    margin: auto;
+    padding:2.188rem 0;
+    display: inline;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 7.5rem;
+    cursor: pointer;
+    padding: 1rem;
+    margin-left: 7rem;
+}
+.list ul li{
+    list-style: none;
+    display: inline-flex;
+    margin: 1 1rem;
+    position: relative;
+}
+.list ul li a{
+    text-decoration: none;
+    border: #009688 1px solid;
+    color: #fff;
+    text-transform: uppercase;
+}
+.list ul li::after{
+    content: '';
+    height: 3px;
+    width:0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.list ul li:hover:after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 3.75rem;
+    margin-top: 80px;
+}
+
+.content p{
+    padding: 0rem 1.875rem 1.25rem;
+    font-family: Arial;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    
+}
+
+button{
+    width: 10rem;
+    padding: 0.938rem 0;
+    text-align: center;
+    margin: 1.25rem 0.050rem;
+    border-radius: 1.563rem;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background:transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 1.563rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+
+@media only screen and (min-width:48rem){
+    .logo{
+        width: 12rem;
+        cursor: pointer;
+        padding: 1rem;
+        margin-left: 14rem;
+    } 
+    
+    .list ul li{
+        list-style: none;
+        display: inline-flex;
+        margin: 0.1rem 0.4rem;
+        font-size: 30px;
+        position: relative;
+    }
+    .list ul li a{
+        text-decoration: none;
+        border: 1px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .content{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: #fff;
+    }
+    .content h1{
+        font-size: 6rem;
+        margin-top: 5rem;
+    }
+     
+    .content p{
+        padding: 0rem 1.875rem 1.25rem;
+        font-family: Arial;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        
+    }
+
+    button{
+        width: 13rem;
+        padding: 1rem 0rem;
+        font-size: 1.375rem;
+        margin: 0rem 3rem;
+        border-radius: 1.600rem;
+        font-weight: bolder;
+    }
+}
+
+
+@media only screen and (min-width:62.5rem){
+    .navbar{
+        width: 100%;
+        margin: auto;
+        padding: 0rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+        .logo{
+            margin: 0;
+            width: 120px;
+            cursor: pointer;
+        }
+        .navbar ul li{
+            position: relative;
+            left: 400px;
+            list-style: none;
+            display: inline-block;
+            margin: 0 1.25rem;
+            position: relative;
+        }
+        .navbar ul li a{
+            float: right;
+            text-decoration: none;
+            color: #fff;
+            font-size: 25px;
+            text-transform: uppercase;
+        }
+        .content{
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            color: #fff;
+        }
+        .content h1{
+            font-size: 60px;
+            margin-top: 90px;
+        }
+     
+        .content p{
+            margin: 20px auto;
+            font-size: medium;
+            font-weight: 100;
+            line-height: 25px;
+        }
+
+        button{
+            width: 12.5rem;
+            padding: 0.938rem 0;
+            border-radius: 25px;
+            font-size: medium;
+        }
+}
